@@ -10,7 +10,7 @@ router
   yield next;
 })
 .get('/def', function* (next) {
-  this.body = 'def say hello';
+  this.body = 'def say s hello';
   yield next;
 });
 

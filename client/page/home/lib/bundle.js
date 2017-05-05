@@ -109,7 +109,7 @@
     var contentNode = document.querySelector('#content');
     contentNode.innerHTML = __WEBPACK_IMPORTED_MODULE_0__index_js__["a" /* default */].join(["I'm", "lucy"], ' ');
     var obj = { name: 'xlx', age: 23 };
-    var arr = [1, 2, 3, 4];
+    var arr = [1, 2];
     console.log(Object.keys(obj));
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;

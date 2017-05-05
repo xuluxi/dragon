@@ -15,14 +15,13 @@
   "scripts": {
     "dev": "node index",
     "eslint": "eslint .",
-    "build": "babel client/page/home/dist -d client/page/home/lib",
-    "gulp": "gulp"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.4.0",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "gulp-sass": "^3.1.0",
     "shelljs": "^0.7.6",
     "webpack": "^2.4.1"

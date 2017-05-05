@@ -8,3 +8,5 @@
 项目日志：
 2017-02-07
   - 既然是一个工程脚手架，涉及了自动化必然要使用NodeJs；
+
+  http://blog.suisuijiang.com/in-nodejs-realize-code-hot-reload-function/
