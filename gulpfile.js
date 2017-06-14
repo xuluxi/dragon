@@ -18,7 +18,7 @@ gulp.task('webpack', () => {
 gulp.task('sass', () => {
   gulp.src('client/page/home/main.scss')
   .pipe(sass())
-  .pipe(gulp.dest('client/page/home/lib'));
+  .pipe(gulp.dest('client/page/home/dist'));
 });
 // 使用babel编译es6文件
 gulp.task('babel', () => {
@@ -34,15 +34,15 @@ styleWatcher.on('change', () => {
 })
 
 // 监听js文件的变化
-let jsWatcher = gulp.watch('client/page/home/*.js', ['webpack', 'babel']);
+let jsWatcher = gulp.watch('client/page/home/*.js', ['webpack']);
 jsWatcher.on('change', () => {
   console.log('js文件变化')
 })
 
-gulp.watch('server/*.js', (e) => {
-  console.log(e)
-});
+// gulp.watch('server/*.js', (e) => {
+//   console.log(e)
+// });
 
-gulp.task('default', ['clean', 'sass', 'webpack', 'babel'], () => {
+gulp.task('default', ['clean', 'sass', 'webpack'], () => {
   console.log('finish run gulp')
 });
