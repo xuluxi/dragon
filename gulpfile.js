@@ -2,7 +2,6 @@ let gulp = require('gulp');
 let path = require('path');
 let shelljs = require('shelljs');
 let sass = require('gulp-sass');
-let webpack2 = require('webpack');
 let babel = require('gulp-babel');
 
 gulp.task('clean', () => {
@@ -43,6 +42,6 @@ jsWatcher.on('change', () => {
 //   console.log(e)
 // });
 
-gulp.task('default', ['clean', 'sass', 'webpack'], () => {
+gulp.task('default', ['clean', 'webpack'], () => {
   console.log('finish run gulp')
 });
